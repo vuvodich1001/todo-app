@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo-List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assests/css/style.css">
+</head>
+
+<body>
+    <div class="app">
+        <h1>Todo App</h1>
+        <form action="" class="app-form">
+            <input type="text" placeholder="Add your new todo">
+            <input type="datetime-local" id="meeting-time" name="meeting-time" value="" min="2010-06-07T00:00">
+            <button class="btn btn-add">+</button>
+        </form>
+
+        <ul class="app-list-task">
+            <!-- <li><input type="checkbox" id=""> <span>Post a new blogpost</span>
+                <button class="btn-delete"><i class="fas fa-trash-alt"></i></button>
+            </li>
+            <li><input type="checkbox" id=""> <span>Create a new portfolio site</span>
+                <button class="btn-delete"><i class="fas fa-trash-alt"></i></button>
+            </li>
+            <li><input type="checkbox" id=""> <span>Buy a new computer</span>
+                <button class="btn-delete"><i class="fas fa-trash-alt"></i></button>
+            </li> -->
+        </ul>
+
+        <div class="app-footer">
+            <span>You have <span class="number"></span>
+                pending task
+            </span>
+
+            <button class="btn btn-clear">Clear All</button>
+        </div>
+    </div>
+
+    <script type="module" src="./app.js"></script>
+</body>
+
+</html>

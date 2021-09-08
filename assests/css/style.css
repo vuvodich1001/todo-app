@@ -1,0 +1,146 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  background-image: linear-gradient(to bottom, #37ccff, #7b22ff);
+}
+
+body > div {
+  margin: auto;
+}
+
+.app {
+  width: 430px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 3px;
+}
+
+.app-form {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+}
+.app-form input {
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 20px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  flex: 1;
+  outline: none;
+  margin: 5px 0;
+}
+.app-form input:focus {
+  border: 1px solid #8243cd;
+}
+
+.app-form button {
+  /* margin-left: 5px; */
+}
+
+.btn {
+  padding: 5px 15px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #8243cd;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: opacity linear 0.2s;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn.btn-add {
+  padding: 7px 15px;
+}
+.app-list-task {
+  list-style: none;
+}
+
+.app-list-task li {
+  font-size: 20px;
+  background-color: rgb(226, 224, 224);
+  border-radius: 3px;
+  height: 60px;
+  line-height: 30px;
+  padding-left: 10px;
+  overflow: hidden;
+  user-select: none;
+}
+
+.app-list-task li + li {
+  margin-top: 10px;
+}
+
+.app-list-task li:hover button {
+  display: inline-block;
+}
+
+.app-list-task li button {
+  float: right;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  line-height: 60px;
+  padding: 0 15px;
+  background-color: rgb(241, 9, 9);
+  animation: slideInLeft ease-in 0.2s;
+  display: none;
+  cursor: pointer;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+.app-list-task li button:hover {
+  opacity: 0.6;
+}
+
+.app-list-task li p {
+  font-size: 16px;
+  font-weight: 700;
+  color: red;
+}
+.app-footer {
+  margin-top: 20px;
+}
+
+.app-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.app-footer span {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+input[type="checkbox"]:checked ~ span {
+  text-decoration: line-through;
+}
+
+input[type="checkbox"]:checked ~ p {
+  color: rgb(23, 207, 23);
+}
